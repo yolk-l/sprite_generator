@@ -12,6 +12,8 @@ local WitchSprite = require("sprites.WitchSprite")
 local GhostSprite = require("sprites.GhostSprite")
 local StoneGiantSprite = require("sprites.StoneGiantSprite")
 local DragonSprite = require("sprites.DragonSprite")
+-- 导入武器精灵模块
+local WeaponSprites = require("WeaponSprites")
 
 -- 生成简单的像素精灵表
 function PixelSprites.generateSprites()
@@ -32,6 +34,9 @@ function PixelSprites.generateSprites()
     GhostSprite.generate()
     StoneGiantSprite.generate()
     DragonSprite.generate()
+    
+    -- 生成武器图像
+    WeaponSprites.generateAll()
 end
 
 return PixelSprites 
